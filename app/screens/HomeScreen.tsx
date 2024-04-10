@@ -1,14 +1,16 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import Phones from "../components/MorphingEmoji/Phones";
+import Emoji from "../components/MorphingEmoji";
 import FlatlistAnime from "../components/FlatlistAnimations";
+import ParallaxCarousel from "../components/Parallax Carousel";
+import Chrome from "../components/Chrome";
 
 interface HomeScreenProps {}
 
 function HomeScreen(props: HomeScreenProps): JSX.Element {
   return (
     <View style={styles.container}>
-      <FlatlistAnime />
+      <Chrome />
     </View>
   );
 }

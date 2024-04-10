@@ -1,3 +1,3 @@
-import Phones from "./Phones";
+import Emoji from "./Emoji";
 
-export default Phones;
+export default Emoji;
