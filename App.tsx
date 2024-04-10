@@ -1,16 +1,17 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import AppNavigator from "./app/navigation/AppNavigator";
 
 export default function App() {
   return (
-    <NavigationContainer>
-      {/* Rest of your app code */}
-      <View style={styles.container}>
-        <Text>Open up App.tsx to start working on your app!</Text>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <NavigationContainer>
         <StatusBar style="auto" />
-      </View>
-    </NavigationContainer>
+        <AppNavigator />
+      </NavigationContainer>
+    </GestureHandlerRootView>
   );
 }
 
