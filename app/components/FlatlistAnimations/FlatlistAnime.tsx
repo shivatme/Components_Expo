@@ -1,13 +1,6 @@
-import React, { useEffect, useState } from "react";
-import {
-  View,
-  StyleSheet,
-  Image,
-  FlatList,
-  Dimensions,
-  Button,
-} from "react-native";
-import Animated, { useSharedValue, withSpring } from "react-native-reanimated";
+import React, { useState } from "react";
+import { View, StyleSheet, FlatList, Dimensions } from "react-native";
+import { useSharedValue } from "react-native-reanimated";
 import CarouselItem from "./CarouselItem";
 import {
   Directions,
@@ -96,6 +89,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     width: "100%",
+    height: "100%",
   },
 });
 
