@@ -11,20 +11,6 @@ import {
 } from "@shopify/react-native-skia";
 import Slider from "@react-native-community/slider";
 
-export interface Phone {
-  shape: string;
-  screen: {
-    x: number;
-    y: number;
-    width: number;
-    height: number;
-  };
-}
-
-interface PhonesProps {
-  phones: Phone[];
-}
-
 export default () => {
   const inputRange = [0, 1, 2];
   const [scroll, setScroll] = useState(0);
@@ -34,17 +20,17 @@ export default () => {
   const mouth = interpolatePath(
     slider.value,
     inputRange,
-    mouths.map((phone) => parse(phone))
+    mouths.map((mouth) => parse(mouth))
   );
   const leftEye = interpolatePath(
     slider.value,
     inputRange,
-    leftEyes.map((phone) => parse(phone))
+    leftEyes.map((eye) => parse(eye))
   );
   const rightEye = interpolatePath(
     slider.value,
     inputRange,
-    rightEyes.map((phone) => parse(phone))
+    rightEyes.map((eye) => parse(eye))
   );
   const eyeColor = interpolateColor(slider.value, inputRange, [
     "#664300",
