@@ -3,13 +3,15 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import AppNavigator from "./app/navigation/AppNavigator";
+import BlurCardsScreen from "./app/screens/BlurCardsScreen";
 
 export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <NavigationContainer>
         <StatusBar style="auto" />
-        <AppNavigator />
+        {/* <AppNavigator /> */}
+        <BlurCardsScreen />
       </NavigationContainer>
     </GestureHandlerRootView>
   );

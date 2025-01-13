@@ -8,11 +8,7 @@ import Chrome from "../components/Chrome";
 interface HomeScreenProps {}
 
 function HomeScreen(props: HomeScreenProps): JSX.Element {
-  return (
-    <View style={styles.container}>
-      <Chrome />
-    </View>
-  );
+  return <View style={styles.container}>{/* <Chrome /> */}</View>;
 }
 
 const styles = StyleSheet.create({
